@@ -82,7 +82,17 @@ const employeeService = {
   deleteEmployee(id) {
     return apiClient.delete(`/employees/${id}`)
       .catch(handleApiError);
-  }
+  },
+
+  markEmployeeAttendance(attendanceData) {
+     return apiClient.post('/employee-attendance', attendanceData)
+       .catch(handleApiError);
+  },
+
+  getTodayAttendance() {
+      return apiClient.get('/employee-attendance/today')
+        .catch(handleApiError);
+  },
 };
 
 // Export all services

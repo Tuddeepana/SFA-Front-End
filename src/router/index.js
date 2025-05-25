@@ -10,6 +10,8 @@ import Social from '../pages/dashboard/social.vue'
 // Employee
 import EmployeeList from '../pages/widgets/employee'
 import EmployeeAdd from '../pages/widgets/employeeAdd'
+import EmployeeAttendance from '../pages/widgets/employeeAtendance'
+import EmployeeAttendanceSheet from '../pages/widgets/employeeAtendancesheet'
 
 import Chart from '../pages/widgets/chart'
 // pageLayout
@@ -304,6 +306,22 @@ const routes = [
             title: 'chart Dashboard | Cuba - Premium Admin Template',
           }
         },
+        {
+          path: '/employee/attendance',
+          name: 'EmployeeAttendance',
+          component: EmployeeAttendance,
+          meta: {
+          title: 'SFA Attendance | Muthu Textile',
+           }
+        },
+        {
+          path: '/employee/attendance-sheet',
+          name: 'EmployeeAttendanceSheet',
+          component: EmployeeAttendanceSheet,
+          meta: {
+         title: 'SFA Attendance Sheet | Muthu Textile',
+           }
+          },
         ]
       },
       {

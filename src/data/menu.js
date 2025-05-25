@@ -42,11 +42,18 @@ export var menuItems={
           "active":false
            },
         {
-          "path": "/widgets/chart",
+          "path": "/employee/attendance",
           "title": "Employee-Attendance",
           "type": "link",
           "active":false
         },
+
+         {
+           "path": "/employee/attendance-sheet",
+           "title": "Attendance-Sheet",
+           "type": "link",
+           "active":false
+         },
         {
           "path": "/widgets/chart",
           "title": "Employee-Task",
